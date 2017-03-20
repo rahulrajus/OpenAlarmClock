@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <title> Open Alarm Clock </title>
+  <script>
+    function updateTime()
+    {
+
+      var curr = new Date();
+      var min = curr.getMinutes()
+      var sec = curr.getSeconds()
+      if(min < 10){
+        min = "0" + curr.getMinutes()
+      }
+      if(sec < 10){
+        sec = "0" + curr.getSeconds()
+      }
+      document.getElementById("clock").innerHTML = curr.getHours()%12 + ":" + min + ":" + sec;
+      
+    }
+
+  </script>
+</head>
+<body onload="updateTime();setInterval('updateTime()',1000)">
+  <div class="container">
+    <div class="time" id="clock">
+
+    </div>
+  </div>
+</body>
+</html>
