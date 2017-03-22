@@ -1,0 +1,25 @@
+{
+  "name": "open-alarm-clock",
+  "version": "1.0.0",
+  "description": "open alarm clock",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slickboy/OpenAlarmClock.git"
+  },
+  "keywords": [
+    "clock",
+    "alarm",
+    "latte-panda"
+  ],
+  "author": "rahul + jaden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slickboy/OpenAlarmClock/issues"
+  },
+  "homepage": "https://github.com/slickboy/OpenAlarmClock#readme"
+}
