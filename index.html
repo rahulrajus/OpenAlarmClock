@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/public/css/main.css">
   <title> Open Alarm Clock </title>
   <script>
     function updateTime()
@@ -17,7 +17,7 @@
         sec = "0" + curr.getSeconds()
       }
       document.getElementById("clock").innerHTML = curr.getHours()%12 + ":" + min + ":" + sec;
-      
+
     }
 
   </script>
