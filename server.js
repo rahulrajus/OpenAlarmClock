@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 var fs = require('fs');
 var path = require('path')
 var five = require('johnny-five')
-var board = new five.Board();
+var board = new five.Board({port: "COM5"});
 board.on("ready", function() {
   var led = new five.Led(13);
   led.blink(100);
