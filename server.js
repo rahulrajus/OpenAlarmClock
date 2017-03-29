@@ -11,7 +11,7 @@ board.on("ready", function() {
   led.blink(100);
   var button5 = new five.Button(5);
   var button4 = new five.Button(4);
-  var button11 = new five.BUtton(11);
+  var button11 = new five.Button(11);
   button5.on("press", function() {
     console.log( "Button5 pressed" );
   });
