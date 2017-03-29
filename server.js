@@ -9,6 +9,18 @@ var board = new five.Board({port: "COM5"});
 board.on("ready", function() {
   var led = new five.Led(13);
   led.blink(100);
+  var button5 = new five.Button(5);
+  var button4 = new five.Button(4);
+  var button11 = new five.BUtton(11);
+  button5.on("press", function() {
+    console.log( "Button5 pressed" );
+  });
+  button4.on("press", function() {
+    console.log( "Button4 pressed" );
+  });
+  button11.on("press", function() {
+    console.log( "Button11 pressed" );
+  });
 });
 app.use('/public', express.static(__dirname + '/public'));
 // app.use(express.static(path.join(__dirname, 'public')));
