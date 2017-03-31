@@ -4,7 +4,20 @@
   <link rel="stylesheet" href="/public/css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCOC67jJEKSZBm5eA3PK8Q2DqE4_nt70Z8",
+      authDomain: "openalarmclock.firebaseapp.com",
+      databaseURL: "https://openalarmclock.firebaseio.com",
+      projectId: "openalarmclock",
+      storageBucket: "openalarmclock.appspot.com",
+      messagingSenderId: "579121875811"
+    };
+    firebase.initializeApp(config);
+    
+  </script>
 
   <title> Open Alarm Clock </title>
   <script>
@@ -34,7 +47,7 @@
       document.getElementById("clock").innerHTML = curr.getHours()%12 + ":" + min + ":" + sec;
     }
     else {
-      document.getElementById("clock").innerHTML = alarm_hr + ":" + alarm_min 
+      document.getElementById("clock").innerHTML = alarm_hr + ":" + alarm_min
     }
 
     }
@@ -44,7 +57,6 @@
 <body onload="updateTime();setInterval('updateTime()',1000)">
   <div class="container">
     <div class="time" id="clock">
-
     </div>
   </div>
 </body>
