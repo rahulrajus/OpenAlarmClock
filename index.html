@@ -16,7 +16,7 @@
       messagingSenderId: "579121875811"
     };
     firebase.initializeApp(config);
-    
+
   </script>
 
   <title> Open Alarm Clock </title>
@@ -24,7 +24,7 @@
     var alarm_hr = 12
     var alarm_min = 0
     var show_alarm = -1
-    var socket = io('http://localhost');
+    var socket = io();
     socket.on('a_alarm', function (data) {
       console.log(data);
       show_alarm = 1
