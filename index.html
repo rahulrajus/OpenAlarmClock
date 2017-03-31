@@ -24,7 +24,7 @@
     var alarm_hr = 12
     var alarm_min = 0
     var show_alarm = -1
-    var socket = io();
+    var socket = io("http://localhost:5000");
     socket.on('a_alarm', function (data) {
       console.log(data);
       show_alarm = 1
